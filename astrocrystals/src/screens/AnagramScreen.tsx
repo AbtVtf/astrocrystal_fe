@@ -135,32 +135,7 @@ const AnagramScreen: React.FC = () => {
       />
         
         
-        <View style={{ padding: 20 }}>
-      <Text style={{ fontSize: 24 }}>Get Planetary Positions</Text>
-      {Object.keys(formData).map((key) => (
-        <View key={key} style={{ marginBottom: 20 }}>
-          <Text>{key}</Text>
-          <TextInput
-            style={{
-              height: 40,
-              borderColor: "gray",
-              borderWidth: 1,
-              paddingLeft: 10,
-            }}
-            onChangeText={(value) => handleChange(key, value)}
-            value={formData[key]}
-          />
-        </View>
-      ))}
-      <Button title="Get Data" onPress={fetchData} />
-      {result && (
-        <View style={{ marginTop: 20 }}>
-          <Text style={{ fontSize: 20 }}>Results:</Text>
-          <Text>{JSON.stringify(result, null, 2)}</Text>
-        </View>
-      )}
-    </View>
-        
+      
       </View>
       );
   };
