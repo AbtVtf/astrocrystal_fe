@@ -1,13 +1,15 @@
 
-
-const fontSizes = {
-    primary: '#F6D7F3',
-    secondary: '#F8E6F6',
-    accent: '#22162B',
-    background: '#FFFCFC',
-    text: '#111010',
-    error: '#ff0000',
-    succes: '#00ff00'
+// fonts.ts
+export const fontSizes = {
+    small: 12,
+    medium: 16,
+    large: 20,
+    xlarge: 24,
   };
   
-  export default fontSizes;
+  export const fontFamilies = {
+    ubuntuRegular: 'Ubuntu-Regular',
+    ubuntuBold: 'Ubuntu-Bold',
+    spaceGrotesk: 'Space Grotesk'
+    // Add other styles as needed
+  };

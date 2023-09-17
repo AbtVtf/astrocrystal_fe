@@ -6,6 +6,7 @@ import AnagramScreen from '../screens/AnagramScreen';
 import CrystalsScreen from '../screens/CrystalScreen';
 import ProfileScreen from '../screens/ProfileScreen';
 import { StyleSheet } from 'react-native';
+import TestScreen from '../screens/testScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -30,12 +31,12 @@ const styles = StyleSheet.create({
 
 const Navbar: React.FC = () => {
   return (
-    <Tab.Navigator tabBar={this} screenOptions={{}}>
+    <Tab.Navigator>
       <Tab.Screen name="Home" component={HomeScreen} />
       <Tab.Screen name="Anagram" component={AnagramScreen} />
       <Tab.Screen name="Crystals" component={CrystalsScreen} />
       <Tab.Screen name="Profile" component={ProfileScreen} />
-      <Tab.Screen name="Page5" component={HomeScreen} />
+      <Tab.Screen name="Page5" component={TestScreen} />
     </Tab.Navigator>
   );
 };
