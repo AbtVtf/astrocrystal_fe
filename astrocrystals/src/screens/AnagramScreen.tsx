@@ -52,6 +52,10 @@ const styles = StyleSheet.create({
       flex: 1,
       justifyContent: 'center',
       padding: 16,
+      backgroundColor: colors.background,
+      borderRadius: 20,
+      paddingTop: 15,
+      marginTop: 5,
     },
     anagramCard: {
         backgroundColor: colors.secondary,
