@@ -31,20 +31,7 @@ const planets = [
     {
       id: "2",
       name: "Winston Orn",
-    },
-    {
-        id: "3",
-        name: "Winston Orn",
-    },
-    {
-        id: "4",
-        name: "Winston Orn",
-    },
-    {
-        id: "5",
-        name: "Winston Orn",
-    },
-
+    }
 ]
 
 const styles = StyleSheet.create({
@@ -121,10 +108,11 @@ const AnagramScreen: React.FC = () => {
     const fetchData = async () => {
         try {
             const response = await axios.post(
-              "http://localhost:3000/api/getPlanetaryPositions",
+              "http://localhost:3000/getAnagram",
               formData
             );
             setResult(response.data.data);
+            console.log("RESPONSSSSSS:",response.data.data);
           } catch (error) {
             console.error("There was an error making the API call:", error);
           }
